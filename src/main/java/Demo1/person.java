@@ -1,12 +1,14 @@
 package Demo1;
 
-import javax.persistence.CascadeType;
+//import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+//import javax.persistence.JoinColumn;
+//import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+//import javax.persistence.OneToOne;
 
 @Entity 
 public class person {
@@ -18,8 +20,8 @@ public class person {
 	   
 	  private String pname;
 	  
-	  @OneToOne
-	  @JoinColumn (name="DEPT_ID") 
+	  @ManyToMany
+	  //@JoinColumn  (name="DEPT_ID") 
 	  private department department;
 
 	public long getId() {

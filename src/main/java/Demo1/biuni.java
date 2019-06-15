@@ -14,11 +14,19 @@ public class biuni {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
-		
-		
 		department d = new department();
-          // d.setId(3);
+        d.setDname("kru");
+        
+		
+		person p = new person();
+		p.setPname("krutarth");
+		p.setDepartment(d);
+		
+		
+		/*
+		 * department d = new department(); d.setDname("kru");
+		 */
+          
 		
 		
 		Configuration config = new Configuration().configure().addAnnotatedClass(person.class).addAnnotatedClass(department.class);
@@ -30,13 +38,12 @@ public class biuni {
 		
 		session.beginTransaction();
 	
-		Query q = session.createQuery("from department");
-		List<department>  dept = q.list();
-		for(department dp: dept)
-		{
-			
-			System.out.println(dp);
-		}
+		/*
+		 * Query q = session.createQuery("from department"); List<department> dept =
+		 * q.list(); for(department dp: dept) {
+		 * 
+		 * System.out.println(dp); }
+		 */
 		
 		
 		

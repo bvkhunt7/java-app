@@ -1,11 +1,12 @@
 package Demo1;
 
-import javax.persistence.CascadeType;
+//import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToMany;
+//import javax.persistence.OneToOne;
 
 @Entity 
 public class department {
@@ -17,7 +18,7 @@ public class department {
 	  
 	  public String dname;
 	  
-	  @OneToOne(mappedBy = "department" , cascade = CascadeType.REMOVE)
+	  @ManyToMany//(mappedBy = "department")
 	  private person person;
 
 	public long getId() {

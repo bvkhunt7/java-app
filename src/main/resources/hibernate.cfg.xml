@@ -29,10 +29,13 @@
 
 		<property name="hbm2ddl.auto">update</property>
 		
+		<mapping class="Demo1.Per" />
+		<mapping class="Demo1.Contact" /> 
 		
-		<mapping class="Demo1.Human" />
-		<mapping class="Demo1.Laptop" />
 		
+		<!--  <mapping class="Demo1.Human" />
+		<mapping class="Demo1.Laptop" /> 
+		 -->
 		<!-- <mapping class="Demo1.laptop" />
 		
 		
@@ -48,6 +51,8 @@
 		<mapping class="Demo1.parkspace"></mapping> 
 		
 		 -->
-
+      
+    <!--   <mapping class="Demo1.person"></mapping>
+		<mapping class="Demo1.department"></mapping> -->
 	</session-factory>
 </hibernate-configuration>

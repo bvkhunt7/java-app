@@ -1,11 +1,14 @@
 package Demo1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-@Entity(name = "LAPTOP") 
+@Entity
 public class Laptop {
 	
 	@Id @GeneratedValue
@@ -15,7 +18,7 @@ public class Laptop {
 	
 	@ManyToOne
 	private Human human;
-	
+	//private List<Human> hu = new ArrayList<Human>();
 	
 	public int getLid() {
 		return lid;
